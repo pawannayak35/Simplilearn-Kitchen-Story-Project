@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* body {
+    background-image: url(./assets/bg-img.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px #1c1c1c7a;
+} */
+body {
+    background-image: url(./assets/bg-img.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px #1c1c1c7a;
+}

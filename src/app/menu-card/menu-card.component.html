@@ -1,0 +1,62 @@
+<div class="content-indentation">
+    <div class="card shadow-0 border rounded-3 hotel-name">
+        <div class="card-body">
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-9 col-xl-9">
+                    <div class="text-indentation">
+                        <h2>{{nameH | titlecase}}</h2>
+                        <p>{{address | titlecase}}</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 border-start border-sm-start-none">
+                    <div class="text-indentation">
+                        <p>Rating : {{ratingH}}</p>
+                        <p>Reviews : {{reviewsH}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5 style="text-align: center; color: aliceblue;">Order Now</h5>
+    <section>
+        <div class="container pt-1 pb-5">
+          <!-- start -->
+          <div class="row justify-content-center mb-3" *ngFor="let kad of kitArrD">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-8 col-xl-8">
+                      <h5>{{kad.name | titlecase}}</h5>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>{{cuisines | titlecase}}</span>
+                      </div>
+                      <hr>
+                      <p class="mb-4 mb-md-0">
+                        {{kad.desc | titlecase}}
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-4 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">{{kad.price | currency : 'INR'}}</h4>
+                        <!-- <span class="text-danger"><s>$20.99</s></span> -->
+                      </div>
+                      <h6 class="text-success">Free shipping</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button class="btn btn-primary btn-sm" type="button" (click)="orderBooked(kad.name, kad.price)">Order Now</button>
+                        <button class="btn btn-outline-primary btn-sm mt-2" type="button">
+                          Add to wishlist
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div><br><br>
+      </section>
+</div>

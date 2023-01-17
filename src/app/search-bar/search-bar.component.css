@@ -1,0 +1,43 @@
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;  
+    /* margin: -50px 0 0 -50px; */
+}
+.search-bar-label {
+   display: flex;
+   justify-content: center;
+   font-size: 2.8rem;
+}
+.search-logo {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2.5rem;
+}
+.form-control {
+    background-color: transparent;
+    width: 700px;
+    border: 2px solid #ced4da;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1;
+}
+.form-control::placeholder {
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+  }
+  .rounded {
+    border-radius: 2rem !important;
+  }
+  .form-control:focus {
+    color: #fff;
+    border-color: #EB455F;
+    outline: 0;
+    box-shadow: none;
+    text-align: center;
+  }

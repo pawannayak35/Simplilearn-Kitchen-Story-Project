@@ -1,0 +1,40 @@
+
+<div class="container">
+    <div class="row row-cols-3 mb-5">
+      <div class="col" *ngFor="let kd of kitchenData | filter: enteredData">
+        <section class="mx-auto cus-inden" style="max-width: 23rem;"> 
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-bs-ripple-color="light">
+                <img src={{kd.feature_image}} class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold"><a>{{kd.name | titlecase}}</a></h5>
+                <p class="mb-2">{{kd.cuisines | titlecase}}</p>
+                <ul class="list-unstyled list-inline mb-0">
+                  <li class="list-inline-item">
+                    <p class="text-muted">Rating : {{kd.rating}}</p>
+                  </li>
+      
+                  <li class="list-inline-item">
+                      <p class="text-muted">Reviews : {{kd.reviews}}</p>
+                  </li>
+
+                  <li class="list-inline-item">
+                    <h4><span class="badge bg-warning text-dark rounded-pill">{{kd.category | titlecase}}</span></h4>
+                </li>
+                  
+                </ul>
+                <p class="card-text">
+                  {{kd.address | titlecase}}
+                </p>
+                <a class="btn btn-success cus-btn" (click)="kitFind(kd.name, kd.cuisines, kd.address,kd.rating, kd.reviews, kd.menu)">Order</a>
+              </div>
+            </div>
+          </section>
+      </div>
+    </div><br><br>
+  </div>
+  

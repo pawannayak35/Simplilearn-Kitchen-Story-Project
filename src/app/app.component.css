@@ -1,0 +1,48 @@
+/* Color of the links BEFORE scroll */
+.nav-link,
+.navbar-toggler-icon{
+  color: #fff !important;
+  font-size: 18px;
+  position: relative;
+}
+.dining::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+
+}
+.dining:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.credential {
+    color: #000 !important;
+    font-weight: bold;
+}
+.srch {
+  color: rgb(197, 249, 93) !important;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+.navbar-center {
+    text-align: center;
+}

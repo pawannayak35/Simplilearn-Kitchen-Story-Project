@@ -1,0 +1,14 @@
+@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
+.content-indentation {
+    padding-top: 4.7rem;
+}
+.card {
+    background-color: #FEFCF3;
+}
+.hotel-name {
+    background-color: transparent;
+}
+.text-indentation {
+    padding-left: 3rem;
+    color: #fff;
+}
